@@ -56,3 +56,6 @@ def classroom_delete(request, classroom_id):
 	Classroom.objects.get(id=classroom_id).delete()
 	messages.success(request, "Successfully Deleted!")
 	return redirect('classroom-list')
+
+#   class ClassApiList(ListApiView):
+# 	queryset = Classroom.objects.all()
